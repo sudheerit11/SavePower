@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sudheer.savepower.SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="119dp">
+
+        <Button
+            android:id="@+id/btnSettingOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lock"
+            android:layout_alignBaseline="@+id/btnSwitchLock"
+            android:layout_alignBottom="@+id/btnSwitchLock"
+            android:layout_toLeftOf="@+id/btnSwitchLock"
+            android:layout_toStartOf="@+id/btnSwitchLock"
+            android:layout_marginRight="39dp"
+            android:layout_marginEnd="39dp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Screen Off"
+            android:layout_alignBaseline="@+id/btnSwitchLock"
+            android:layout_alignBottom="@+id/btnSwitchLock"
+            android:layout_toRightOf="@+id/btnSwitchLock"
+            android:layout_toEndOf="@+id/btnSwitchLock"
+            android:layout_marginRight="39dp"
+            android:layout_marginEnd="39dp" />
+
+
+        <Switch
+            android:id="@+id/btnSwitchLock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSettingOn"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="30dp" />
+
+        <TextView
+            android:id="@+id/txtTimeSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Screen Off Time"
+            android:layout_below="@+id/btnSwitchLock"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="30dp"/>
+
+        <SeekBar
+            android:id="@+id/timeSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/txtTimeSetting"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/txtTimeVal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="0"
+            android:layout_below="@+id/seekBar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp" />
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
